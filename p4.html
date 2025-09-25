@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -85,7 +85,6 @@
     padding:10px;
     font-size:0.9rem;
     display:none;
-    z-index: 2;
   }
 
   /* Music controls */
@@ -378,20 +377,10 @@ function backToMusic(){
   bgm.currentTime=0;
 }
 
-/* ✅ Updated toggleNote + event binding for mobile */
 function toggleNote(item){
-  const note = item.querySelector('.note');
-  note.style.display = (note.style.display === 'block') ? 'none' : 'block';
+  const note=item.querySelector('.note');
+  note.style.display=(note.style.display==='block')?'none':'block';
 }
-
-// add listeners for both click and touch
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', () => toggleNote(item));
-  item.addEventListener('touchend', e => {
-    e.preventDefault();  // prevents the touch from being swallowed by a <video>
-    toggleNote(item);
-  });
-});
 
 /* Volume + mute controls */
 const bgm = document.getElementById('bgm');
@@ -405,9 +394,11 @@ muteBtn.addEventListener('click', () => {
 volumeSlider.addEventListener('input', e => {
   bgm.volume = e.target.value;
 });
+
+
+
+
 </script>
 
 </body>
 </html>
-
-
