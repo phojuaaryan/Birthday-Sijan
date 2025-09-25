@@ -52,10 +52,11 @@
     }
 
     @keyframes floatUp {
-      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      0%   { transform: translateY(100vh) rotate(0deg);   opacity: 1; }
       100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
     }
 
+    /* Button – hidden at first */
     .btn {
       margin-top: 30px;
       padding: 12px 25px;
@@ -66,8 +67,15 @@
       font-weight: bold;
       font-size: 1rem;
       cursor: pointer;
-      transition: 0.3s;
       font-family: 'Quicksand', sans-serif;
+      opacity: 0;                 /* start invisible */
+      pointer-events: none;       /* not clickable while hidden */
+      transition: opacity 0.6s;   /* smooth fade-in */
+    }
+
+    .btn.show {                   /* class added after 4s */
+      opacity: 1;
+      pointer-events: auto;
     }
 
     .btn:hover {
@@ -84,41 +92,42 @@
     <button class="btn" onclick="nextPage()">Next ➝</button>
   </div>
 
-<script>
-  // Floating hearts & watermelons
-  const emojis = ["❤️","💖","💓","🍉","💕"]; // removed 💞
-  
-  function createEmoji() {
-    const span = document.createElement('span');
-    span.classList.add('float');
-    span.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
-    span.style.left = Math.random() * 100 + "vw";
+  <script>
+    // Floating hearts & watermelons
+    const emojis = ["❤️","💖","💓","🍉","💕"];
 
-    // Randomize size: sometimes small, sometimes very big
-    let size;
-    if (Math.random() < 0.2) { 
-      // 20% chance for a big emoji
-      size = Math.floor(Math.random() * 30 + 50); // 50px–80px
-    } else {
-      size = Math.floor(Math.random() * 25 + 20); // 20px–45px
+    function createEmoji() {
+      const span = document.createElement('span');
+      span.classList.add('float');
+      span.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+      span.style.left = Math.random() * 100 + "vw";
+
+      // Randomize size
+      let size = Math.random() < 0.2
+        ? Math.floor(Math.random() * 30 + 50) // big 50–80px
+        : Math.floor(Math.random() * 25 + 20); // normal 20–45px
+      span.style.fontSize = size + "px";
+
+      // Random speed
+      span.style.animationDuration = Math.random() * 3 + 3 + "s";
+      document.body.appendChild(span);
+
+      setTimeout(() => span.remove(), 6000);
     }
-    span.style.fontSize = size + "px";
 
-    // Random speed
-    span.style.animationDuration = Math.random() * 3 + 3 + "s";
-    document.body.appendChild(span);
+    setInterval(createEmoji, 500);
 
-    setTimeout(() => {
-      span.remove();
-    }, 6000);
-  }
+    // Reveal the button after 4 seconds
+    window.addEventListener("load", () => {
+      const btn = document.querySelector(".btn");
+      setTimeout(() => {
+        btn.classList.add("show");
+      }, 4000);
+    });
 
-  setInterval(createEmoji, 500);
-
-  function nextPage() {
-    window.location.href = "p2.html"; // link to next page
-  }
-</script>
-
+    function nextPage() {
+      window.location.href = "p2.html"; // link to next page
+    }
+  </script>
 </body>
 </html>
