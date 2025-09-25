@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -85,6 +85,7 @@
     padding:10px;
     font-size:0.9rem;
     display:none;
+    z-index: 2;
   }
 
   /* Music controls */
@@ -152,97 +153,142 @@
   <div class="gallery-container">
 
     <!-- Photos -->
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/dcUUdwZ.jpeg" alt="Zoo Pose"><div class="note">Zoo Pose</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/WemBSEk.jpeg" alt="We Love Eachother"><div class="note">We Love Eachother</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/K3RuuT8.jpeg" alt="We Are Good"><div class="note">We Are Good</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/6QVh9FQ.mp4" alt="We Are Good 1"><div class="note">We Are Good 1</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/WsrzkJn.jpeg" alt="We Are Good 2"><div class="note">We Are Good 2</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/ObkjBsx.jpeg" alt="Watermelon Is Love"><div class="note">Watermelon Is Love</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/z2LUNKI.jpeg" alt="Waiting Till My House Is Free"><div class="note">Waiting Till My House Is Free</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/qg8EttU.jpeg" alt="Waiting For Food"><div class="note">Waiting For Food</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/bZvImMR.jpeg" alt="Tired Of Walking"><div class="note">Tired Of Walking</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/awbYdvh.jpeg" alt="Selfie With My Personal Monkey"><div class="note">Selfie With My Personal Monkey</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/j3ZztFJ.jpeg" alt="Random Dump"><div class="note">Random Dump</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/x74lTXc.jpeg" alt="Random Break 3"><div class="note">Random Break 3</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/DbusdrN.jpeg" alt="We Hate Our Exs"><div class="note">We Hate Our Exs</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9RgFl6F.jpeg" alt="We Dont Talk Anymore"><div class="note">We Dont Talk Anymore</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/jx8CqwO.jpeg" alt="Mad For No Reason"><div class="note">Mad For No Reason</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/UN9S87y.jpeg" alt="Random Break Is Fun"><div class="note">Random Break Is Fun</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/xJSrOO9.jpeg" alt="Nagarkot Date"><div class="note">Nagarkot Date</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/ogIyIcZ.jpeg" alt="Our Bouqet"><div class="note">Our Bouqet</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/DT4kAZZ.jpeg" alt="I Want Some Cake"><div class="note">I Want Some Cake</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/DJS88OF.jpeg" alt="Lovely Filter"><div class="note">Lovely Filter</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/rvq0LFP.jpeg" alt="Profile Pic"><div class="note">Profile Pic</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4N5TwZv.jpeg" alt="Put Your Head In My Shoulders"><div class="note">Put Your Head In My Shoulders</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/vlkaoUU.jpeg" alt="Pretty Little Baby"><div class="note">Pretty Little Baby</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/5y7hwWr.jpeg" alt="Pretty Little Baby 1"><div class="note">Pretty Little Baby 1</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9Spz9TS.jpeg" alt="Pretty Little Baby 2"><div class="note">Pretty Little Baby 2</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/N0tH1Wg.jpeg" alt="Old Photo Together"><div class="note">Old Photo Together</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/nfCSCp7.jpeg" alt="Best Nail Polish"><div class="note">Best Nail Polish</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/CcBEnJT.jpeg" alt="Matching Photo"><div class="note">Matching Photo</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/SCGXyoX.jpeg" alt="Love By Hands"><div class="note">Love By Hands</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/29f4254.jpeg" alt="Kamalpokhari 1"><div class="note">Kamalpokhari 1</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9NcEEC7.jpeg" alt="Jhola Gang"><div class="note">Jhola Gang</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/H8JttXO.jpeg" alt="Just You In My Eyes"><div class="note">Just You In My Eyes</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/jysPsf7.jpeg" alt="I M Pretty"><div class="note">I M Pretty</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/CclqqNF.jpeg" alt="Cat Is Me"><div class="note">Cat Is Me</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4M2ZFzL.jpeg" alt="Godawori Dump"><div class="note">Godawori Dump</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/pXKEQqm.jpeg" alt="I M Pretty With Messy Hair"><div class="note">I M Pretty With Messy Hair</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/NC5BuAZ.jpeg" alt="I M Pretty 1"><div class="note">I M Pretty 1</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/LZvb8JM.jpeg" alt="I M Pretty 2"><div class="note">I M Pretty 2</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4qudxrL.jpeg" alt="I M Pretty 3"><div class="note">I M Pretty 3</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/wpXvf5i.jpeg" alt="I Am The Princess"><div class="note">I Am The Princess</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/KOvjddY.jpeg" alt="I Am Still Not Okay"><div class="note">I Am Still Not Okay</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/JTCh1az.jpeg" alt="Heels Gives Me Pain"><div class="note">Heels Gives Me Pain</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/1f9LlrJ.jpeg" alt="Happy Day"><div class="note">Happy Day</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/oiZ65US.jpeg" alt="Godawari Day"><div class="note">Godawari Day</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/hd4kCfo.jpeg" alt="Funtime In Dhap Dam"><div class="note">Funtime In Dhap Dam</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/E7j6U74.jpeg" alt="Feed Me Something"><div class="note">Feed Me Something</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/bmYvJha.jpeg" alt="Fav Photo"><div class="note">Fav Photo</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/2tcoEl3.jpeg" alt="Compromising With Monaco"><div class="note">Compromising With Monaco</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/iLjZBee.jpeg" alt="Closed Eye Makes Me Pretty"><div class="note">Closed Eye Makes Me Pretty</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/6QIfycz.jpeg" alt="Be My Be My Baby"><div class="note">Be My Be My Baby</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/cFAy5vl.jpeg" alt="Back To Parking"><div class="note">Back To Parking</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/Voh7vsE.jpeg" alt="Always Ready To Go"><div class="note">Always Ready To Go</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/6QIfycz.jpeg" alt="Always Cute"><div class="note">Always Cute</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/iLjZBee.jpeg" alt="Always Aesthetic"><div class="note">Always Aesthetic</div></div>
+<!-- Photos -->
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/Voh7vsE.jpeg" alt="Zoo Pose"><div class="note">zoo pose</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/WemBSEk.jpeg" alt="We Love Eachother"><div class="note">cardboard vase</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/K3RuuT8.jpeg" alt="We Are Good"><div class="note">i am the princess</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/ObkjBsx.jpeg" alt="Watermelon Is Love"><div class="note">always aesthetic</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/z2LUNKI.jpeg" alt="Waiting Till My House Is Free"><div class="note">always cute</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/qg8EttU.jpeg" alt="Waiting For Food"><div class="note">back to parking</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/bZvImMR.jpeg" alt="Tired Of Walking"><div class="note">always ready to go</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/H8JttXO.jpeg" alt="Just You In My Eyes"><div class="note">kamalpokhari</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/awbYdvh.jpeg" alt="Selfie With My Personal Monkey"><div class="note">be my be my baby</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/wpXvf5i.jpeg" alt="I Am The Princess"><div class="note">profile pic</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/WsrzkJn.jpeg" alt="We Are Good 2"><div class="note">aesthetic</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/DbusdrN.jpeg" alt="We Hate Our Exs"><div class="note">cat is me</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9RgFl6F.jpeg" alt="We Dont Talk Anymore"><div class="note">closed eye makes me pretty</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/j3ZztFJ.jpeg" alt="Random Dump"><div class="note">best nail polish</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/jx8CqwO.jpeg" alt="Mad For No Reason"><div class="note">compromising with Monaco</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/UN9S87y.jpeg" alt="Random Break Is Fun"><div class="note">fav photo</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/xJSrOO9.jpeg" alt="Nagarkot Date"><div class="note">feed me something</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/ogIyIcZ.jpeg" alt="Our Bouqet"><div class="note">funtime in dhap dam</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/DJS88OF.jpeg" alt="Lovely Filter"><div class="note">godawari day</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/rvq0LFP.jpeg" alt="Profile Pic"><div class="note">happy day</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4N5TwZv.jpeg" alt="Put Your Head In My Shoulders"><div class="note">heels gives me pain</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/vlkaoUU.jpeg" alt="Pretty Little Baby"><div class="note">i am still not okay</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9Spz9TS.jpeg" alt="Pretty Little Baby 2"><div class="note">i m pretty 1</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/CcBEnJT.jpeg" alt="Matching Photo"><div class="note">i m pretty with messy hair</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/9NcEEC7.jpeg" alt="Jhola Gang"><div class="note">just you in my eyes</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/jysPsf7.jpeg" alt="I M Pretty"><div class="note">love by hands</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/nfCSCp7.jpeg" alt="Best Nail Polish"><div class="note">i m pretty</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/29f4254.jpeg" alt="Kamalpokhari 1"><div class="note">jhola gang</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/CclqqNF.jpeg" alt="Cat Is Me"><div class="note">lovely filter</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/dcUUdwZ.jpeg" alt="Strawberry"><div class="note">Strawberry Sijan</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4M2ZFzL.jpeg" alt="Godawori Dump"><div class="note">matching photo</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/pXKEQqm.jpeg" alt="I M Pretty With Messy Hair"><div class="note">our bouqet</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/SCGXyoX.jpeg" alt="Love By Hands"><div class="note">pretty little baby</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/NC5BuAZ.jpeg" alt="I M Pretty 1"><div class="note">pretty little baby 2</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/LZvb8JM.jpeg" alt="I M Pretty 2"><div class="note">pretty little baby 3</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/4qudxrL.jpeg" alt="I M Pretty 3"><div class="note">my princess</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/KOvjddY.jpeg" alt="I Am Still Not Okay"><div class="note">we are good 1</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/JTCh1az.jpeg" alt="Heels Gives Me Pain"><div class="note">random break is fun</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/1f9LlrJ.jpeg" alt="Happy Day"><div class="note">random dump</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/oiZ65US.jpeg" alt="Godawari Day"><div class="note">selfie with my personal monkey</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/E7j6U74.jpeg" alt="Feed Me Something"><div class="note">we are good 2</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/bmYvJha.jpeg" alt="Fav Photo"><div class="note">waiting for food</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><img src="https://i.imgur.com/cFAy5vl.jpeg" alt="Fav Photo"><div class="note">watermelon is love</div></div>
+<!-- Add inside your existing gallery-container -->
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/LROfbgE.jpeg" alt="We Love Eachother">
+  <div class="note">We Love Eachother</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/henz7ff.jpeg" alt="We Hate Our Exs">
+  <div class="note">We Hate Our Exs</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/i7SfPbJ.jpeg" alt="We Dont Talk Anymore">
+  <div class="note">We Dont Talk Anymore</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/LkLrT7I.jpeg" alt="We Are Good">
+  <div class="note">We Are Good</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/2tcoEl3.jpeg" alt="Waiting Till My House Is Free">
+  <div class="note">Waiting Till My House Is Free</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/KjNht1F.jpeg" alt="Tired Of Walking">
+  <div class="note">Tired Of Walking</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/vxNOpmv.jpeg" alt="Put Your Head In My Shoulders">
+  <div class="note">Put Your Head In My Shoulders</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/cdv9fB4.jpeg" alt="Old Photo Together">
+  <div class="note">Old Photo Together</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/eXnG8du.jpeg" alt="Nagarkot Date">
+  <div class="note">Nagarkot Date</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/DT4kAZZ.jpeg" alt="Godawori Dump">
+  <div class="note">Godawori Dump</div>
+</div>
+
+<div class="gallery-item" onclick="toggleNote(this)">
+  <img src="https://i.imgur.com/OTpcLIh.jpeg" alt="I Am Hungry">
+  <div class="note">I Am Hungry</div>
+</div>
+
+
 
     <!-- Videos -->
-    <div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/EMK0RjU.mp4" controls autoplay muted loop></video><div class="note">About Toxic Girls</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/gxx9gvN.mp4" controls autoplay muted loop></video><div class="note">Again When</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/en3AQej.mp4" controls autoplay muted loop></video><div class="note">Basantapur Date</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/KEPC2a4.mp4" controls autoplay muted loop></video><div class="note">Cutie</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/Q8CWmV4.mp4" controls autoplay muted loop></video><div class="note">Dairymilk Ad Premium</div></div>
+    <div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/AdqWrFX.mp4" controls autoplay muted loop></video><div class="note"></div>Trendy</div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/gxx9gvN.mp4" controls autoplay muted loop></video><div class="note">She Ignored Me</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/en3AQej.mp4" controls autoplay muted loop></video><div class="note">Lovely Filter</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/KEPC2a4.mp4" controls autoplay muted loop></video><div class="note">Dairymilk Ad Premium</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/Q8CWmV4.mp4" controls autoplay muted loop></video><div class="note">Cutie</div></div>
 <div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/TlZM0JZ.mp4" controls autoplay muted loop></video><div class="note">Hyperlapse</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/DtExk2T.mp4" controls autoplay muted loop></video><div class="note">It Matches</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/AMAqcdA.mp4" controls autoplay muted loop></video><div class="note">It Was Hard To Find This Video</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/BDpKlXo.mp4" controls autoplay muted loop></video><div class="note">Langtang Trek</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/7Ib2DaF.mp4" controls autoplay muted loop></video><div class="note">Makeup Anywhere</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/gmVxGY0.mp4" controls autoplay muted loop></video><div class="note">My Princess</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/DtExk2T.mp4" controls autoplay muted loop></video><div class="note">It Was Hard To Find This Video</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/AMAqcdA.mp4" controls autoplay muted loop></video><div class="note">I Didnt Ignore</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/BDpKlXo.mp4" controls autoplay muted loop></video><div class="note">It Matches</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/7Ib2DaF.mp4" controls autoplay muted loop></video><div class="note">Basantapur Date</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/gmVxGY0.mp4" controls autoplay muted loop></video><div class="note">This Is Cool</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/uPrIFjV.mp4" controls autoplay muted loop></video><div class="note">Pretty Bby</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/LDvojU2.mp4" controls autoplay muted loop></video><div class="note">Again When</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/Kj3qqeh.mp4" controls autoplay muted loop></video><div class="note">Makeup Anywhere</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/hA2vZHW.mp4" controls autoplay muted loop></video><div class="note">Rock Your Party</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/bGvJyQ7.mp4" controls autoplay muted loop></video><div class="note">laa la la laaaa</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/AVdpYKh.mp4" controls autoplay muted loop></video><div class="note">About Toxic Girls Snap Vlog</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/rG6L7OX.mp4" controls autoplay muted loop></video><div class="note">Udayo Hawale</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/C6gwG6t.mp4" controls autoplay muted loop></video><div class="note">My Princess</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/UeR2TZR.mp4" controls autoplay muted loop></video><div class="note">Langtang Trek</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/Silwj6R.mp4" controls autoplay muted loop></video><div class="note">Shy Me</div></div>
 <div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/EoCaotK.mp4" controls autoplay muted loop></video><div class="note">Poison Candy</div></div>
-
-<!-- keep the remaining entries (Chillin In Zoo, Pretty Bby, …) as-is since no more new links were supplied -->
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/chillin in zoo.mp4" controls autoplay muted loop></video><div class="note">Chillin In Zoo</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/pretty bby.mp4" controls autoplay muted loop></video><div class="note">Pretty Bby</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/pretty filter.mp4" controls autoplay muted loop></video><div class="note">Pretty Filter</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/rock your party.mp4" controls autoplay muted loop></video><div class="note">Rock Your Party</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/shy me.mp4" controls autoplay muted loop></video><div class="note">Shy Me</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/snap vlog.mp4" controls autoplay muted loop></video><div class="note">Snap Vlog</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/trendyy.mp4" controls autoplay muted loop></video><div class="note">Trendyy</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/i didnt ignore.mp4" controls autoplay muted loop></video><div class="note">I Didnt Ignore</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/this is cool.mp4" controls autoplay muted loop></video><div class="note">This Is Cool</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="photo/lovely filter.mp4" controls autoplay muted loop></video><div class="note">Lovely Filter</div></div>
-<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/ZMuNucz.mp4" controls autoplay muted loop></video><div class="note">She Ignored Me</div></div>
+<div class="gallery-item" onclick="toggleNote(this)"><video src="https://i.imgur.com/ZMuNucz.mp4" controls autoplay muted loop></video><div class="note">Chillin In Zoo</div></div>
 
 
   </div>
 
   <!-- ===== JUST YOU SECTION (moved to end, no tab) ===== -->
-  <h1 style="margin-top:60px;">Just You 💕</h1>
-  <div class="gallery-container">
+  <!-- <h1 style="margin-top:60px;">Just You 💕</h1>
+  <div class="gallery-container"> -->
 
     <!-- First 5 videos -->
-    <div class="gallery-item" onclick="toggleNote(this)">
+    <!-- <div class="gallery-item" onclick="toggleNote(this)">
       <video src="drive/1.mp4" controls></video>
       <div class="note">Memory 1 💕</div>
     </div>
@@ -278,8 +324,8 @@
     <div class="gallery-item" onclick="toggleNote(this)">
       <video src="drive/10.mp4" controls></video>
       <div class="note">Memory 10 💕</div>
-    </div>
-
+    </div> -->
+<!-- 
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/11.mp4" controls></video><div class="note">Memory 11 💕</div></div>
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/12.mp4" controls></video><div class="note">Memory 12 💕</div></div>
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/13.mp4" controls></video><div class="note">Memory 13 💕</div></div>
@@ -297,9 +343,9 @@
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/28.mp4" controls></video><div class="note">Memory 28 💕</div></div>
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/29.mp4" controls></video><div class="note">Memory 29 💕</div></div>
     <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/30.mp4" controls></video><div class="note">Memory 30 💕</div></div>
-    <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/31.mp4" controls></video><div class="note">Memory 31 💕</div></div>
+    <div class="gallery-item" onclick="toggleNote(this)"><video src="drive/31.mp4" controls></video><div class="note">Memory 31 💕</div></div> -->
 
-  </div>
+  <!-- </div> -->
 
   <!-- Next Page Button -->
   <div class="top-bar" style="margin-bottom:40px;">
@@ -332,10 +378,20 @@ function backToMusic(){
   bgm.currentTime=0;
 }
 
+/* ✅ Updated toggleNote + event binding for mobile */
 function toggleNote(item){
-  const note=item.querySelector('.note');
-  note.style.display=(note.style.display==='block')?'none':'block';
+  const note = item.querySelector('.note');
+  note.style.display = (note.style.display === 'block') ? 'none' : 'block';
 }
+
+// add listeners for both click and touch
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => toggleNote(item));
+  item.addEventListener('touchend', e => {
+    e.preventDefault();  // prevents the touch from being swallowed by a <video>
+    toggleNote(item);
+  });
+});
 
 /* Volume + mute controls */
 const bgm = document.getElementById('bgm');
@@ -349,10 +405,9 @@ muteBtn.addEventListener('click', () => {
 volumeSlider.addEventListener('input', e => {
   bgm.volume = e.target.value;
 });
-
-
-
 </script>
 
 </body>
 </html>
+
+
